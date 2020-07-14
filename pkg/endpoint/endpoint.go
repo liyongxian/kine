@@ -8,14 +8,15 @@ import (
 	"strings"
 
 	"github.com/pkg/errors"
+	"github.com/sirupsen/logrus"
+	"google.golang.org/grpc"
+
 	"github.com/rancher/kine/pkg/drivers/dqlite"
 	"github.com/rancher/kine/pkg/drivers/mysql"
 	"github.com/rancher/kine/pkg/drivers/pgsql"
 	"github.com/rancher/kine/pkg/drivers/sqlite"
 	"github.com/rancher/kine/pkg/server"
 	"github.com/rancher/kine/pkg/tls"
-	"github.com/sirupsen/logrus"
-	"google.golang.org/grpc"
 )
 
 const (
